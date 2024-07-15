@@ -45,17 +45,22 @@ verOrdenes.addEventListener("click", (e) => {
 class UI {
   mostrarMensaje(mensaje, tipo, referencia) {
     const input = document.querySelector(`#${referencia}`);
-    const alerta = document.createElement("p");
+    const refAlerta = document.querySelector(".alerta");
 
-    if (tipo === "error") {
-      alerta.classList.add("error");
+    if (!refAlerta) {
+      const alerta = document.createElement("p");
+      alerta.classList.add("alerta");
+
+      if (tipo === "error") {
+        alerta.classList.add("error");
+      }
+      alerta.textContent = mensaje;
+      input.parentElement.appendChild(alerta);
+
+      setTimeout(() => {
+        alerta.remove();
+      }, 3000);
     }
-    alerta.textContent = mensaje;
-    input.parentElement.appendChild(alerta);
-
-    setTimeout(() => {
-      alerta.remove();
-    }, 3000);
   }
   obtenerOrdenesUI() {
     limpiarHTML(containerOrdenes);
