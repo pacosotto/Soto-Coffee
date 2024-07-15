@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: rgb(191, 191, 255);
+  font-family: system-ui;
+}
+#navbar {
+  background: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
+}
+#navbar ul a {
+  text-decoration: none;
+}
+.container-formulario {
+  background: white;
+  margin: 50px;
+  border-radius: 10px;
+  padding: 20px;
+}
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 2rem;
+}
+#formulario #mesero {
+  font-size: 2rem;
+}
+#formulario #mesa {
+  width: 10%;
+  font-size: 2rem;
+}
+#formulario #orden {
+  height: 200px;
+  resize: vertical;
+  font-size: 2rem;
+}
+.error {
+  background: red;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 40%;
+}
+.container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.verPagina {
+  display: block;
+}
+.ocultarPagina {
+  display: none;
+}
+.container-ordenes {
+  background: white;
+  margin: 50px;
+  border-radius: 10px;
+  padding: 20px;
+}

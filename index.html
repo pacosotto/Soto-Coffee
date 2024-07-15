@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soto'sCoffee</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="" id="tomar-ordenes">TOMAR ORDEN</a></li>
+        <li><a href="" id="ver-ordenes">ORDENES</a></li>
+      </ul>
+    </nav>
+    <div class="container-formulario verPagina">
+      <form id="formulario">
+        <div class="container-input">
+          <label for="mesero">Mesero: </label>
+          <select name="mesero" id="mesero">
+            <option value="">Selecciona tu nombre</option>
+            <!-- Aquí iran las demás opciones -->
+          </select>
+        </div>
+        <div class="container-input">
+          <label for="mesa">Mesa: </label>
+          <input type="number" name="mesa" id="mesa" min="1" max="10" />
+        </div>
+        <div class="container-input">
+          <label for="orden">Orden: </label>
+          <textarea name="orden" id="orden"></textarea>
+        </div>
+        <button type="submit" id="enviar-orden">Realizar orden</button>
+      </form>
+    </div>
+
+    <div class="container-ordenes ocultarPagina">
+      <h1>Ordenes:</h1>
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
